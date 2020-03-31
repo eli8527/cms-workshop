@@ -6,6 +6,9 @@
           <a href="<?= $entry->url(); ?>">
             <?= $entry->title(); ?>
           </a>
+          <div class="description">
+            <?= $entry->main_content()->kirbytext(); ?>
+          </div>
         </li>
       <?php endforeach; ?>
     </ul>

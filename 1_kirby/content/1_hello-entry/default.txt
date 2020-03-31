@@ -1,0 +1,5 @@
+Title: Hello, Entry
+
+----
+
+Main-content: *Hello, world!*
