@@ -14,7 +14,7 @@
     <title><?= $title ?> | <?= $site->title() ?></title>
   <?php endif; ?>
 
-  <?= css(['assets/css/main.css', '@auto']);?>
-  <?= js(['assets/js/main.js', '@auto']); ?>
+  <?= css(['assets/main.css', '@auto']);?>
+  <?= js(['assets/main.js', '@auto']); ?>
 </head>
 <body>

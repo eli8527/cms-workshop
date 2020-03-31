@@ -1,9 +1,11 @@
 <?php snippet('header'); ?>
   <div class="layout-wrapper">
-    <ul class="entries">
+    <ul id="entries">
       <?php foreach($site->index()->listed() as $entry): ?>
         <li class="entry">
-          <?= $entry->title(); ?>
+          <a href="<?= $entry->url(); ?>">
+            <?= $entry->title(); ?>
+          </a>
         </li>
       <?php endforeach; ?>
     </ul>
