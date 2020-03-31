@@ -2,4 +2,10 @@ Title: Entry 2
 
 ----
 
-Main-content: Entry 2
+Hero-image:
+
+- week-13.jpg
+
+----
+
+Main-content: Hello entry 2 here!

@@ -10,6 +10,13 @@ tabs:
       main:
         width: 1/1
         fields:
+          hero_image:
+            label: Image
+            type: files
+            width: 1/2
+            max: 1
+            min: 1
+            layout: cards
           main_content:
             label: Main Content
             type: textarea

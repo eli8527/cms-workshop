@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-family: Arial, sans-serif;
 }
 
@@ -37,4 +37,14 @@ img {
   width: 100px;
   margin-top: 20px;
   margin-left: 20px;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  width: 400px;
+  margin-right: 20px;
 }

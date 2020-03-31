@@ -2,4 +2,10 @@ Title: Hello, Entry
 
 ----
 
+Hero-image:
+
+- week-4.jpg
+
+----
+
 Main-content: *Hello, world!*
