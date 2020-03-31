@@ -1,8 +1,24 @@
-title: Default Page
-preset: page
-fields:
-  text:
-    label: Text
-    type: textarea
-    size: large
+# Each page blueprint must have a title, the title may be different from the file name
+# This default blueprint is used to display a page in the Panel whenever a custom page blueprint is missing.
+title: Page
 
+tabs:
+  main:
+    label: Main
+    icon: text
+    columns:
+      main:
+        width: 1/1
+        fields:
+          main_content:
+            label: Content
+            type: textarea
+            size: medium
+            width: 1/2
+  uploads:
+    label: Uploads
+    icon: file
+    sections:
+      file_uploads:
+        headline: Uploads
+        type: files
