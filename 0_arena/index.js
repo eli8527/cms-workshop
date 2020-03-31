@@ -1,6 +1,14 @@
 let channel = 'postcards-yizb0oq2rza';
 let makeURL = (per, page) => `https://api.are.na/v2/channels/${channel}?per=${per}&page=${page}`;
 
+// Get metadata
+fetch(makeURL(1, 1))
+  .then((res) => res.json())
+  .then((json) => {
+    document.querySelector('#title').innerHTML = json.title;
+  });
+
+// Get the blocks
 fetch(makeURL(1, 1))
   .then((res) => res.json())
   .then((json) => count = json.length)
