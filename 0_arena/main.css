@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   font-family: Arial, sans-serif;
 }
 
@@ -34,7 +34,12 @@ img {
 }
 
 .entry {
-  width: 100px;
+  width: 300px;
   margin-top: 20px;
   margin-left: 20px;
+}
+
+.title {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

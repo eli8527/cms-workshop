@@ -1,4 +1,4 @@
-let channel = 'under-consideration-1517888768';
+let channel = 'postcards-yizb0oq2rza';
 let makeURL = (per, page) => `https://api.are.na/v2/channels/${channel}?per=${per}&page=${page}`;
 
 fetch(makeURL(1, 1))
@@ -29,12 +29,17 @@ function makeEntry(entry) {
   let entryEl = entryTemplate.content.cloneNode(true);
   let entryLi = entryEl.querySelector('li');
 
-  // if (entry.class === 'Text') {
-  //   let text = entry.content_html;
-  //   entryLi.innerHTML = text;
-  // } else if (entry.class === 'Image') {
-  //   entryLi.innerHTML = '<a href="' + entry.image.original.url + '" target="_blank"><img src="' + entry.image.display.url + '"></a><div class="caption">' + entry.title + '</div>';
-  // }
+  let entryClass = entry.class;
+
+  if (entryClass == 'Image') {
+    entryLi.querySelector('a').href = entry.image.original.url;
+    entryLi.querySelector('img').src = entry.image.display.url;
+    entryLi.querySelector('.title').innerHTML = entry.title;
+    entryLi.querySelector('.title').innerHTML = entry.title;
+    entryLi.querySelector('.description').innerHTML = entry.description_html;
+  } else if (entryClass == 'Text') {
+    entryLi.querySelector('.description').innerHTML = entry.content_html;
+  }
 
   let entriesEl = document.getElementById('entries');
   entriesEl.insertBefore(entryEl, entriesEl.firstChild);
